@@ -16,13 +16,13 @@ import com.example.asus.viewinject.reflect.ViewInjectUtils;
 
 
 @ContentView(R.layout.activity_main)
-public class MainActivity extends AppCompatActivity {
+public class ReflectActivity extends AppCompatActivity {
 
     @ViewInject(R.id.btn_one)
     Button mButtonOne;
     @ViewInject(R.id.btn_two)
     Button mButtonTwo;
-    private static final String TAG = "MainActivity";
+    private static final String TAG = "ReflectActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
     @OnClick(R.id.btn_one)
     public void handleOnClick(View view) {
-        Toast.makeText(MainActivity.this, "", Toast.LENGTH_SHORT).show();
+        Toast.makeText(ReflectActivity.this, "", Toast.LENGTH_SHORT).show();
 
     }
 

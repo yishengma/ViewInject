@@ -100,7 +100,7 @@ public class ViewInjectUtils {
 
                 try {
                     Method handleOnClickMethod = annotationType.getDeclaredMethod("value"); // 获取 OnClick 方法的里面 value 方法
-                    int[] viewIds = (int[]) handleOnClickMethod.invoke(annotation, null); //这个方法就是存储所有的 id ,调用这个方法就可以获取所有的id
+                    int[] viewIds = (int[]) handleOnClickMethod.invoke(annotation, (Object) null); //这个方法就是存储所有的 id ,调用这个方法就可以获取所有的id
                     DynamicHandler dynamicHandler = new DynamicHandler(activity); // 动态代理
                     dynamicHandler.addMethod(methodName, method); //两个参数分别是  OnClick 和 handleOnClick 方法
                     Object listener = Proxy.newProxyInstance(listenerType.getClassLoader(),

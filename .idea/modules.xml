@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ViewInject.iml" filepath="$PROJECT_DIR$/ViewInject.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ioc/ioc.iml" filepath="$PROJECT_DIR$/ioc/ioc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ioc-annotation/ioc-annotation.iml" filepath="$PROJECT_DIR$/ioc-annotation/ioc-annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ioc-processor/ioc-processor.iml" filepath="$PROJECT_DIR$/ioc-processor/ioc-processor.iml" />
     </modules>
   </component>
 </project>

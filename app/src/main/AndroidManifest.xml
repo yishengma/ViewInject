@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".reflect.demo.MainActivity">
+        <activity android:name=".reflect.demo.ReflectActivity">
+
+        </activity>
+        <activity android:name=".compile.CompileActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
