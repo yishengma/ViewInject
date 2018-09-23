@@ -10,7 +10,13 @@ import com.example.asus.viewinject.R;
 import com.example.ioc.ViewBinder;
 import com.example.ioc_annotation.BindView;
 
-import java.util.Map;
+/**
+ *  使用的是编译时注解的方式，使用的是  @Retention(RetentionPolicy.CLASS) 策略
+ *  依赖的库有 ioc,ioc-annotation ,ioc-compile
+ *  对应的 注解处理器就是 AnnotationProcessor ，注意这个类不能添加注释，否则就会报错
+ *  还有就是使用 javaPoet 生成对应的文件的时候空格等格式都要与普通的 Java 文件的格式一样。
+ */
+
 
 public class CompileActivity extends AppCompatActivity {
     @BindView(R.id.btn_one)

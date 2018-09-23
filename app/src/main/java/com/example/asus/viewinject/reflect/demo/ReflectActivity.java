@@ -14,7 +14,7 @@ import com.example.asus.viewinject.reflect.ViewInjectUtils;
 
 
 
-
+// 使用的是反射的方式
 @ContentView(R.layout.activity_main)
 public class ReflectActivity extends AppCompatActivity {
 
